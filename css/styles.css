@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rancho", cursive;
+}
+
+.container {
+    /* background-color: red; */
+    width: 98%;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+main {
+    height: 1000px;
+}
+
+/* Nav */
+
+.nav {
+    /* height: 85%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding-bottom: 5px;
+    
+}
+
+.nav_logo {
+    width: 25%;
+}
+
+.nav_img {
+    width: 100%;
+    /* margin: 0 auto; */
+    display: block;
+}
+
+/* nav de los links */
+
+.nav_menu {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    background-color: rgb(186, 113, 4);
+    padding: 25px 20px;
+
+    opacity: 0;
+    transition: .8s opacity; 
+
+}
+
+.nav_menu--show {
+    opacity: 1;
+}
+
+.nav_links {
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nav_link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.nav_link:hover {
+    color: rgb(10, 225, 10);
+    text-decoration: underline;
+}
+
+/* div de botones log In / Sign In */
+
+.nav_buttons {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    padding: .5rem 1.5rem;
+    background-color: white;
+    border-radius: 4px;
+    min-width: max-content;
+    /* width: auto; */
+    width: 100%;
+    border: 1px solid transparent;
+
+    color: rgb(186, 113, 4);
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.btn:hover {
+    color: rgb(10, 225, 10);
+}
+
+.menu {
+
+    background-color: rgb(186, 113, 4);
+    border-radius: 4px;
+    padding-top: 3px;
+
+    margin: 15px;
+
+    cursor:  pointer;
+}
+
+.lorem {
+    height: 1000px;
+}
+
+
+@media (width > 768px) {
+    .container {
+        width: 88%;
+    }
+}
+
+@media (width > 1200px) {
+    .container {
+        width: 85%;
+    }
+}
